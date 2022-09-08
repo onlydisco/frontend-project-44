@@ -1,0 +1,19 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "Brain Games Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onlydisco/frontend-project-44.git"
+  },
+  "author": "Mukhin Sergey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onlydisco/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/onlydisco/frontend-project-44#readme"
+}
