@@ -26,7 +26,7 @@ const playBrainGames = (rules, options) => {
       pointsCount += 1;
     } else {
       console.log(
-        `"${userAnswer}" is wrong answer ;(. Correct answer is "${correctAnswer}".\nLet's try again, ${userName}!`
+        `"${userAnswer}" is wrong answer ;(. Correct answer is "${correctAnswer}".\nLet's try again, ${userName}!`,
       );
       return;
     }

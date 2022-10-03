@@ -9,3 +9,7 @@
 ### Asciinema link brain-even
 
 [![asciicast](https://asciinema.org/a/520919.svg)](https://asciinema.org/a/520919)
+
+### Asciinema link brain-calc
+
+[![asciicast](https://asciinema.org/a/525397.svg)](https://asciinema.org/a/525397)
