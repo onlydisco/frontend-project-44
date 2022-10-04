@@ -6,14 +6,14 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/16e3545ae126c7533e7a/maintainability)](https://codeclimate.com/github/onlydisco/frontend-project-44/maintainability)
 
-### Asciinema link brain-even
+### Asciinema brain-even
 
 [![asciicast](https://asciinema.org/a/520919.svg)](https://asciinema.org/a/520919)
 
-### Asciinema link brain-calc
+### Asciinema brain-calc
 
 [![asciicast](https://asciinema.org/a/525397.svg)](https://asciinema.org/a/525397)
 
-### Asciinema link brain-gcd
+### Asciinema brain-gcd
 
 [![asciicast](https://asciinema.org/a/525662.svg)](https://asciinema.org/a/525662)
