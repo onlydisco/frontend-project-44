@@ -13,3 +13,7 @@
 ### Asciinema link brain-calc
 
 [![asciicast](https://asciinema.org/a/525397.svg)](https://asciinema.org/a/525397)
+
+### Asciinema link brain-gcd
+
+[![asciicast](https://asciinema.org/a/525662.svg)](https://asciinema.org/a/525662)

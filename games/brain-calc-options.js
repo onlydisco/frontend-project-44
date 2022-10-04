@@ -2,8 +2,8 @@ const gameRules = 'What is the result of the expression?';
 
 const getGameOptions = () => {
   const randomRange = 100;
-  const firstRandomNumer = Math.floor(Math.random() * randomRange);
-  const secondRandomNumer = Math.floor(Math.random() * randomRange);
+  const firstRandomNumber = Math.floor(Math.random() * randomRange);
+  const secondRandomNumber = Math.floor(Math.random() * randomRange);
 
   const operators = ['+', '-', '*'];
 
@@ -18,16 +18,16 @@ const getGameOptions = () => {
 
   switch (getRandomOperator(operators)) {
     case '+':
-      gameQuestion = `${firstRandomNumer} + ${secondRandomNumer}`;
-      gameCorrectAnswer = (firstRandomNumer + secondRandomNumer).toString();
+      gameQuestion = `${firstRandomNumber} + ${secondRandomNumber}`;
+      gameCorrectAnswer = (firstRandomNumber + secondRandomNumber).toString();
       break;
     case '-':
-      gameQuestion = `${firstRandomNumer} - ${secondRandomNumer}`;
-      gameCorrectAnswer = (firstRandomNumer - secondRandomNumer).toString();
+      gameQuestion = `${firstRandomNumber} - ${secondRandomNumber}`;
+      gameCorrectAnswer = (firstRandomNumber - secondRandomNumber).toString();
       break;
     case '*':
-      gameQuestion = `${firstRandomNumer} * ${secondRandomNumer}`;
-      gameCorrectAnswer = (firstRandomNumer * secondRandomNumer).toString();
+      gameQuestion = `${firstRandomNumber} * ${secondRandomNumber}`;
+      gameCorrectAnswer = (firstRandomNumber * secondRandomNumber).toString();
       break;
     default:
   }
