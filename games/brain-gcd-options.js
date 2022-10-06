@@ -2,8 +2,8 @@ const gameRules = 'Find the greatest common divisor of given numbers.';
 
 const getGameOptions = () => {
   const randomRange = 100;
-  const firstRandomNumber = Math.floor(Math.random() * randomRange);
-  const secondRandomNumber = Math.floor(Math.random() * randomRange);
+  const firstRandomNumber = Math.round(Math.random() * randomRange);
+  const secondRandomNumber = Math.round(Math.random() * randomRange);
 
   const gameQuestion = `${firstRandomNumber} ${secondRandomNumber}`;
 

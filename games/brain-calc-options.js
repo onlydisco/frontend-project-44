@@ -2,13 +2,13 @@ const gameRules = 'What is the result of the expression?';
 
 const getGameOptions = () => {
   const randomRange = 100;
-  const firstRandomNumber = Math.floor(Math.random() * randomRange);
-  const secondRandomNumber = Math.floor(Math.random() * randomRange);
+  const firstRandomNumber = Math.round(Math.random() * randomRange);
+  const secondRandomNumber = Math.round(Math.random() * randomRange);
 
   const operators = ['+', '-', '*'];
 
   const getRandomOperator = (arr) => {
-    const randomIndex = Math.floor(Math.random() * operators.length);
+    const randomIndex = Math.round(Math.random() * operators.length);
     const randomOperator = arr[randomIndex];
     return randomOperator;
   };
