@@ -1,14 +1,19 @@
+import { getRandomNumber } from '../src/index.js';
+
 const gameRules = 'What is the result of the expression?';
 
 const getGameOptions = () => {
-  const randomRange = 100;
-  const firstRandomNumber = Math.round(Math.random() * randomRange);
-  const secondRandomNumber = Math.round(Math.random() * randomRange);
+  const [minRandomNumber, maxRandomNumber] = [0, 99];
+  const [firstRandomNumber, secondRandomNumber] = [
+    getRandomNumber(minRandomNumber, maxRandomNumber),
+    getRandomNumber(minRandomNumber, maxRandomNumber),
+  ];
 
   const operators = ['+', '-', '*'];
 
   const getRandomOperator = (arr) => {
-    const randomIndex = Math.round(Math.random() * (arr.length - 1));
+    const [minRandomIndex, maxRandomIndex] = [0, arr.length - 1];
+    const randomIndex = getRandomNumber(minRandomIndex, maxRandomIndex);
     const randomOperator = arr[randomIndex];
     return randomOperator;
   };

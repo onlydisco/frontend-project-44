@@ -1,25 +1,32 @@
 import readlineSync from 'readline-sync';
 
-const playBrainGames = (rules, options) => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
-  console.log(`${rules}`);
+export const getRandomNumber = (min, max) => Math.round(Math.random() * (max - min) + min);
 
-  const playRound = () => {
-    const [roundQuestion, correctRoundAnswer] = options();
-    const userRoundAnswer = readlineSync.question(`Question: ${roundQuestion} `);
-    console.log(`Your answer: ${userRoundAnswer}`);
-    const isRoundWon = userRoundAnswer === correctRoundAnswer;
-    const roundValues = [isRoundWon, userRoundAnswer, correctRoundAnswer];
-    return roundValues;
-  };
+const sayHello = (gameRules) => {
+  console.log('Welcome to the Brain Games!');
+  const user = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${user}!`);
+  console.log(`${gameRules}`);
+  return user;
+};
+
+const playRound = (gameOptions) => {
+  const [roundQuestion, correctRoundAnswer] = gameOptions();
+  const userRoundAnswer = readlineSync.question(`Question: ${roundQuestion} `);
+  console.log(`Your answer: ${userRoundAnswer}`);
+  const isRoundWon = userRoundAnswer === correctRoundAnswer;
+  const roundValues = [isRoundWon, userRoundAnswer, correctRoundAnswer];
+  return roundValues;
+};
+
+const playBrainGames = (rules, options) => {
+  const userName = sayHello(rules);
 
   const roundsQuantity = 3;
   let pointsCount = 0;
 
   for (let i = 0; i < roundsQuantity; i += 1) {
-    const [isWon, userAnswer, correctAnswer] = playRound();
+    const [isWon, userAnswer, correctAnswer] = playRound(options);
 
     if (isWon === true) {
       console.log('Correct!');
