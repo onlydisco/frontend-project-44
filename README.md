@@ -8,16 +8,20 @@
 
 ### Asciinema brain-even
 
-[![asciicast](https://asciinema.org/a/520919.svg)](https://asciinema.org/a/520919)
+[![asciicast](https://asciinema.org/a/526954.svg)](https://asciinema.org/a/526954)
 
 ### Asciinema brain-calc
 
-[![asciicast](https://asciinema.org/a/525397.svg)](https://asciinema.org/a/525397)
+[![asciicast](https://asciinema.org/a/526956.svg)](https://asciinema.org/a/526956)
 
 ### Asciinema brain-gcd
 
-[![asciicast](https://asciinema.org/a/525662.svg)](https://asciinema.org/a/525662)
+[![asciicast](https://asciinema.org/a/526957.svg)](https://asciinema.org/a/526957)
 
 ### Asciinema brain-progression
 
-[![asciicast](https://asciinema.org/a/526130.svg)](https://asciinema.org/a/526130)
+[![asciicast](https://asciinema.org/a/526958.svg)](https://asciinema.org/a/526958)
+
+### Asciinema brain-prime
+
+[![asciicast](https://asciinema.org/a/526959.svg)](https://asciinema.org/a/526959)

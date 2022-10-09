@@ -8,7 +8,7 @@ const getGameOptions = () => {
   const operators = ['+', '-', '*'];
 
   const getRandomOperator = (arr) => {
-    const randomIndex = Math.round(Math.random() * operators.length);
+    const randomIndex = Math.round(Math.random() * (arr.length - 1));
     const randomOperator = arr[randomIndex];
     return randomOperator;
   };
