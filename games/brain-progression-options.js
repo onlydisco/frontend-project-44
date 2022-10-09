@@ -30,7 +30,7 @@ const getGameOptions = () => {
   const gameCorrectAnswer = interimProgressionArray[randomHiddenItemIndex];
   interimProgressionArray[randomHiddenItemIndex] = '..';
 
-  const gameQuestion = interimProgressionArray.join(', ');
+  const gameQuestion = interimProgressionArray.join(' ');
 
   const gameValues = [gameQuestion, gameCorrectAnswer];
   return gameValues;
