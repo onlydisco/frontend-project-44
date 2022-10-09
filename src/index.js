@@ -12,8 +12,9 @@ const sayHello = (gameRules) => {
 
 const playRound = (gameOptions) => {
   const [roundQuestion, correctRoundAnswer] = gameOptions();
-  const userRoundAnswer = readlineSync.question(`Question: ${roundQuestion} `);
-  console.log(`Your answer: ${userRoundAnswer}`);
+  console.log(`Question: ${roundQuestion}`);
+  const userRoundAnswer = readlineSync.question('Your answer: ');
+
   const isRoundWon = userRoundAnswer === correctRoundAnswer;
   const roundValues = [isRoundWon, userRoundAnswer, correctRoundAnswer];
   return roundValues;
