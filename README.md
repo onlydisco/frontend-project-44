@@ -1,4 +1,4 @@
-### Hexlet tests and linter status:
+### Hexlet tests and Linter status:
 
 [![Actions Status](https://github.com/onlydisco/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/onlydisco/frontend-project-44/actions)
 
