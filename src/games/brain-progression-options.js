@@ -34,7 +34,7 @@ const getOptions = () => {
     randomProgressionStep,
   );
 
-  const randomHiddenItemIndex = getRandomNumber(0, interimProgressionArray.length);
+  const randomHiddenItemIndex = getRandomNumber(0, interimProgressionArray.length - 1);
   const correctAnswer = interimProgressionArray[randomHiddenItemIndex];
   interimProgressionArray[randomHiddenItemIndex] = '..';
 
