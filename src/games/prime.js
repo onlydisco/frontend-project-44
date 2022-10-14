@@ -18,7 +18,7 @@ const isPrime = (number) => {
   return answer;
 };
 
-const getOptions = () => {
+const getRound = () => {
   const minRandomNumber = 0;
   const maxRandomNumber = 99;
   const question = getRandomNumber(minRandomNumber, maxRandomNumber);
@@ -28,4 +28,4 @@ const getOptions = () => {
   return [question, correctAnswer];
 };
 
-export { rules, getOptions as options };
+export { rules, getRound };

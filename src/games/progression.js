@@ -14,9 +14,8 @@ const getRandomProgression = (length, firstItem, step) => {
   return progressionArray;
 };
 
-const getOptions = () => {
+const getRound = () => {
   const progressionLength = 10;
-
   const minFirstProgressionItem = 0;
   const maxFirstProgressionItem = 99;
   const randomFirstProgressionItem = getRandomNumber(
@@ -37,10 +36,9 @@ const getOptions = () => {
   const randomHiddenItemIndex = getRandomNumber(0, interimProgressionArray.length - 1);
   const correctAnswer = interimProgressionArray[randomHiddenItemIndex];
   interimProgressionArray[randomHiddenItemIndex] = '..';
-
   const question = interimProgressionArray.join(' ');
 
   return [question, correctAnswer];
 };
 
-export { rules, getOptions as options };
+export { rules, getRound };
