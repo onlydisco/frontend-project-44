@@ -12,8 +12,7 @@ const playBrainGames = (rules, getRound) => {
     const [roundQuestion, correctRoundAnswer] = getRound();
     console.log(`Question: ${roundQuestion}`);
     const userRoundAnswer = readlineSync.question('Your answer: ');
-    const isRoundWon = userRoundAnswer === correctRoundAnswer;
-    if (isRoundWon === true) {
+    if (userRoundAnswer === correctRoundAnswer) {
       console.log('Correct!');
     } else {
       console.log(
