@@ -1,3 +1,4 @@
+import playBrainGames from '../index.js';
 import { getRandomNumber } from '../random-number.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
@@ -34,4 +35,8 @@ const getRound = () => {
   return [question, correctAnswer];
 };
 
-export { rules, getRound };
+const playGcd = () => {
+  playBrainGames(rules, getRound);
+};
+
+export default playGcd;

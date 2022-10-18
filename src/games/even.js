@@ -1,3 +1,4 @@
+import playBrainGames from '../index.js';
 import { getRandomNumber } from '../random-number.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -12,4 +13,8 @@ const getRound = () => {
   return [question, correctAnswer];
 };
 
-export { rules, getRound };
+const playEven = () => {
+  playBrainGames(rules, getRound);
+};
+
+export default playEven;

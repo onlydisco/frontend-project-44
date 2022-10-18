@@ -1,3 +1,4 @@
+import playBrainGames from '../index.js';
 import { getRandomNumber } from '../random-number.js';
 
 const rules = 'What is the result of the expression?';
@@ -37,4 +38,8 @@ const getRound = () => {
   return [question, correctAnswer];
 };
 
-export { rules, getRound };
+const playCalc = () => {
+  playBrainGames(rules, getRound);
+};
+
+export default playCalc;

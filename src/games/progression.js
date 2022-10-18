@@ -1,8 +1,9 @@
+import playBrainGames from '../index.js';
 import { getRandomNumber } from '../random-number.js';
 
 const rules = 'What number is missing in the progression?';
 
-const getRandomProgression = (length, firstItem, step) => {
+const getProgression = (length, firstItem, step) => {
   const progressionArray = [];
   let newProgressionItem = firstItem;
 
@@ -27,7 +28,7 @@ const getRound = () => {
   const maxProgressionStep = 9;
   const randomProgressionStep = getRandomNumber(minProgresssionStep, maxProgressionStep);
 
-  const interimProgressionArray = getRandomProgression(
+  const interimProgressionArray = getProgression(
     progressionLength,
     randomFirstProgressionItem,
     randomProgressionStep,
@@ -41,4 +42,8 @@ const getRound = () => {
   return [question, correctAnswer];
 };
 
-export { rules, getRound };
+const playProgression = () => {
+  playBrainGames(rules, getRound);
+};
+
+export default playProgression;
