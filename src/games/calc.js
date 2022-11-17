@@ -17,6 +17,7 @@ const calculate = (operator, firstNumber, secondNumber) => {
       result = (firstNumber * secondNumber).toString();
       break;
     default:
+      break;
   }
 
   return result;
